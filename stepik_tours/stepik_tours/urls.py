@@ -20,7 +20,7 @@ from tours.views import MainView, DepartureView, TourView
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', MainView.as_view(), name='main'),
-    path('departure/<str:departure>', DepartureView.as_view(), name='departure'),
-    path('tour/<int:id>/', TourView.as_view(), name='tour'),
+    path('', MainView.as_view(), name='main_url'),
+    path('departure/<str:depart_id>', DepartureView.as_view(), name='departure_url'),
+    path('tour/<int:tour_id>/', TourView.as_view(), name='tour_url'),
 ]
